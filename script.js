@@ -34,12 +34,16 @@ async function getPokemon (pokemon) {
 }
 
 function showPokemon(name, number, img, gif) {
-  pokemonName.innerHTML = name.toUpperCase()
-  pokemonNumber.innerHTML = number
-  if(gif !== null){
-    pokemonImg.setAttribute('src', gif)
-  }else{
-    pokemonImg.setAttribute('src', img)
+  if (number < 906) {
+    pokemonName.innerHTML = name.toUpperCase()
+    pokemonNumber.innerHTML = number
+    if(gif !== null){
+      pokemonImg.setAttribute('src', gif)
+    }else{
+      pokemonImg.setAttribute('src', img)
+    }
+  } else {
+    alert('Pokémon inválido ❌')
   }
 }
 
