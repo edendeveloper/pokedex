@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f8fafc;
+}
+
+.formPokemon {
+  margin: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formPokemon input {
+  width: 200px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+
+.pokemonShow {
+  padding: 30px;
+  background-color: #dc2626;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 5px solid black;
+  border-radius: 8px;
+  margin: 0 auto;
+  width: 400px;
+  height: 500px;
+}
+
+.pokemonTitle {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 340px;
+  padding: 10px;
+  background-color: #f8fafc;
+}
+
+.pokemonImage {
+  border-radius: 8px;
+  border: 1px solid black;
+  background-color: #f8fafc;
+  width: 340px;
+  height: 300px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.pokemonImage img {
+  width: 100%;
+  height: 200;
+}
+
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  background-color: #64748b;
+  padding: 5px;
+}
+
+footer span a {
+  text-decoration: none;
+  color: white;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.slideToLeft {
+  animation: slideLeft 1s;
+}
+
+.slideToRight {
+  animation: slideRight 1s;
+}
+
+.fadeIn {
+  animation: fadeIn 1s;
+}
+
