@@ -4,7 +4,9 @@ const pokemonNumber = document.querySelector('.pokemonNumber')
 const pokemonImg = document.querySelector('.pokemonImg')
 const buttons = document.querySelector('.buttons')
 
+
 buttons.addEventListener('click', changePokemon)
+
 
 function changePokemon(event) {
   const selectedButton = event.target.innerHTML

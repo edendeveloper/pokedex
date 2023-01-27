@@ -227,4 +227,10 @@ footer a:hover {
   animation: fadeIn 1s;
 }
 
+@media screen and (max-width:640px) {
+  .sidePokemon, .sidePokemonLeft {
+    display: none;
+  }
+}
+
 
